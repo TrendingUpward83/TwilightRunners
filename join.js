@@ -49,6 +49,13 @@ function validateForm(evt) {
         document.getElementById("errorText").innerHTML = "Please fill all fields.";
         document.getElementById("errorText").style.display = "block";scroll(0,0);
     }
+
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value)){
+    return (true)
+    }
+    alert("You have entered an invalid email address!")
+    return (false)
+    
 }
 /* Create validation event listeners */
 function createEventListeners() {
