@@ -1,0 +1,6 @@
+http://www.exampledomain.com/index.html
+http://www.exampledomain.com/about.html
+http://www.exampledomain.com/join.html
+http://www.exampledomain.com/steps_spots.html
+http://www.exampledomain.com/time.html
+

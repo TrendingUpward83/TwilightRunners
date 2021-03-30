@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      JavaScript 6th Edition
+      Chapter 1
+      Chapter Individual Case
+
+      Twilight Runners
+      Case Project
+      Author: Christina Sereday
+      Date:   01/28/2021
+
+      Filename: about.html
+
+   -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--Responsive Meta viewport setting (already present)-->
+    <title>Twilight Runners-About Us</title>
+    <link rel="icon" href="images/twilight_favicon2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="runners2.css" />
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <figure>
+                <img src="images/sm_logo.jpg"alt="Twilight Runners Logo" title="Twilight Runners Logo" class="img-fluid" id="logo1">
+                    <figcaption>Twilight Runners Logo</figcaption>
+            </figure>
+            <h1>Twilight Runners Recreational Running Club</h1>
+        </header>
+
+ <!--Mobile Nav-->
+ <div class="mobile">
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="steps_spots.html">Where we meet</a>
+            <a href="join.html">Join Us</a>
+            <a href="time.html">Countdown Timer</a>
+            <a href="https://facebook.com/BurgerKing" target=“_blank”><img src="images/f_logo_RGB-Grey_58.png" alt=" grey facebook logo"> </a>
+            <a href=“https://twitter.com/BurgerKing” target=“_blank”><img src="images/Twitter_icon.png" alt=“blue square twitter logo”></a>
+        </div>
+        <a class = "menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+        </a>
+    </nav>
+</div>
+<!--Tablet, desktop Nav-->
+<div class="container-fluid tablet-desktop">
+    <div class="row">
+        <div class="navbar sticky-top navbar-light col-lg-12" style="background-color:#dadad4" >
+            
+                <nav>
+                    <ul>
+                        <li> 
+                            <a href="https://facebook.com/BurgerKing" target=“_blank”><img src="images/f_logo_RGB-Grey_58.png" alt=" grey facebook logo"> </a>
+                            <a href=“https://twitter.com/BurgerKing” target=“_blank”><img src="images/Twitter_icon.png" alt=“blue square twitter logo”></a>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="steps_spots.html">Where we meet</a></li>
+                        <li><a href="join.html">Join Us</a></li>
+                        <li><a href="time.html">Countdown Timer</a></li>
+                    </ul>
+                </nav>
+            
+        </div>
+    </div>
+</div>
+        <main>
+            <aside>
+                <figure>
+                    <img src ="images/trailrunner.jpg" alt="View following a trail runner in a flower field."/>
+                    <figcaption>
+                        <p>Running in a field of flowers, </br> or walking around the</br>block of your street-</br>it all counts!</br></br>
+                            Image credit:</br> https://gunnisoncrestedbutte.com/</p>
+                    </figcaption>
+                </figure>
+            </aside>
+            <article>
+                <h2 id="article_heading">About Twilight Runners</h2>
+                <p>We are a group of people who are committed to getting up, getting out and being on the move. Whether it's a walk on a treadmill at a gym, a few laps around the yard or a full marathon, every step taken each day counts. A few of us run on local trails together, many of us log our miles independently, some run fast and others slow. What we have in common is that we aim to get the majority of our steps in during <em>twilight</em>- those wee hours in the morning or sometime around dusk.</p>
+                <hr />
+
+                <p>Whether you are completely new to exercise or you have a few Ironmans under your belt, there's a spot for you here. You are free to join up with others at your level, create in-person groups or have online only mileage challenges, look to one another for inspiration, share tips and encourage one another.</p>
+                <hr />
+
+                <p>Remember, you don't have to go fast, you just have to go!</p>
+
+
+                <!--Idea for a mileage counter widget with total miles logged by everyone in (fictional) group here-->
+            </article>
+        </main>
+
+        <div class="container-fluid">
+            <div class="row">
+            <footer>
+                <p>Twilight Runners &copy; Pittsburgh, PA 12345</p>
+            </footer>
+            </div>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+</body>
+</html>

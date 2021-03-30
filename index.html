@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      JavaScript 6th Edition
+      Chapter 1
+      Chapter Individual Case
+
+      Twilight Runners
+      Case Project
+      Author: Christina Sereday
+      Date:   01/28/2021
+      Last Modified: 02/22/2021
+
+      Filename: index.html
+
+   -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--Responsive Meta viewport setting (already present)-->
+    <title>Twilight Runners</title>
+    <link rel="icon" href="images/twilight_favicon2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="runners2.css" />
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+            <header class = "tablet-desktop">
+                <figure>
+                    <img src="images/sm_logo.jpg"alt="Twilight Runners Logo" title="Twilight Runners Logo" class="slidein" id="logo1">
+                        <figcaption>Twilight Runners Logo</figcaption>
+                <h1>Twilight Runners Recreational Running Club</h1>
+            </figure>
+            </header>
+            </div>
+        </div>
+    </div>
+ <!--Mobile Nav-->
+    <div class="mobile">
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="steps_spots.html">Where we meet</a>
+                <a href="join.html">Join Us</a>
+                <a href="time.html">Countdown Timer</a>
+                <a href="https://facebook.com/BurgerKing" target=“_blank”><img src="images/f_logo_RGB-Grey_58.png" alt=" grey facebook logo"> </a>
+                <a href=“https://twitter.com/BurgerKing” target=“_blank”><img src="images/Twitter_icon.png" alt=“blue square twitter logo”></a>
+            </div>
+            <a class = "menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+            </a>
+        </nav>
+    </div>
+<!--Tablet, desktop Nav-->
+    <div class="container-fluid tablet-desktop">
+        <div class="row">
+            <div class="navbar sticky-top navbar-light col-lg-12" style="background-color:#dadad4" >
+                
+                    <nav>
+                        <div class="social">
+                            <ul>
+                                <li> 
+                                    <a href="https://facebook.com/BurgerKing" target=“_blank”><img src="images/f_logo_RGB-Grey_58.png" alt=" grey facebook logo"> </a>
+                                    <a href=“https://twitter.com/BurgerKing” target=“_blank”><img src="images/Twitter_icon.png" alt=“blue square twitter logo”></a>
+                                </li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="steps_spots.html">Where we meet</a></li>
+                                <li><a href="join.html">Join Us</a></li>
+                                <li><a href="time.html">Countdown Timer</a></li>
+                        </ul>
+                    </nav>               
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <aside>
+                <ul>
+                    <li>&#9830; Running</li>
+                    <li>&#9830; Walking</li>
+                    <li>&#9830; Enjoying Trails</li>
+                    <li>&#9830; Virtual Running Club Awards</li>
+                </ul>
+
+                    <form id="estimateform">
+                        <fieldset>
+                            <legend><span><h2>Members, add your Miles to our log!</h2></span></legend>
+                            </br>
+                            <input type="number" min="0" max="1000" id="usermiles" />
+                            <label for="newlyloggedmiles">
+                                <p class="mileform"># of miles this run: (1&#8209;1,000)</p>
+                                </label>
+                            <p>Total miles ran by all members: <span id="totalmiles"></span></p>
+                        </fieldset>
+                    </form>
+
+                    <form id="estimateform">
+                        <fieldset>
+                            <legend><span><h2>Enter a date to see if there's an event!</h2></span></legend>
+                            </br>
+                            <input type="date" id="userdate" min="2021-01-01" max="2021-12-31" value=""/>
+                            <label for="desireddate">
+                            <input type="button" id="sButton" value="Check for Event"></input>
+                                <p class="formtext">Results:</p>
+                                </label>
+                            <p><span id="isevent"></span></p>
+                        </fieldset>
+                    </form>
+                </aside>
+            </div>
+            <div class="col-lg-9">
+                    <main>
+                        <article>
+                                <figure id="home_img">
+                                    <img src="images/lg_logo.png" alt="Large sylized wolf face logo of Twilight Runners" title="Twilight Runners Logo" id="Lg_Logo" />
+                                    <figcaption>Twilight Runners Logo</figcaption>
+                                </figure>
+                                <h2>~We walk and run, rain or sun ~</h2>
+                                    <ul>
+                                        <li>Log your miles to compete for prizes</li>
+                                        <li>Train alone or as part of a team</li>
+                                        <li>Motivation and support</li>
+                                    </ul>
+                                <figure id="steps_table">
+                                    <h2>How many steps in a mile? Well, it depends...</h2>
+                                    <table class="table table-striped table-hover table-responsive-sm">
+                                        <caption caption-side="top">Approximate steps per mile based on height</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"><strong>Height</strong></th>
+                                                    <th scope="col"><strong>Approximate Steps per Mile</strong></th>
+                                                <tr>
+                                            </thead>
+                                            <tbody>
+                                                        <td>4'10"</td>
+                                                        <td>2,645</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4'11"</td>
+                                                        <td>2,600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5'0"</td>
+                                                        <td>2,556</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5'1"</td>
+                                                        <td>2,514</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4'10"</td>
+                                                        <td>2,645</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4'10"</td>
+                                                        <td>2,645</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4'10"</td>
+                                                        <td>2,645</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4'10"</td>
+                                                        <td>2,645</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4'10"</td>
+                                                        <td>2,645</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4'10"</td>
+                                                        <td>2,645</td>
+                                                    </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr><td id=tablefoot colspan="2"><p>Source: https://www.chparks.com/   
+                                                <br>Derived from:<a href="www.thewalkingsite.com/10000steps.html"> "10000 Steps- The Walking Site"</a></p><td></tr>
+                                            </tfoot>
+                                    </table>
+                                </figure>
+                        </article>
+                    </main>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <footer>
+                <p>Twilight Runners &copy; Pittsburgh, PA 12345</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="runners.js"></script>
+
+</html>

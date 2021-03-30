@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      JavaScript 6th Edition
+      Chapter 1
+      Chapter Individual Case
+
+      Twilight Runners
+      Case Project
+      Author: Christina Sereday
+      Date:   01/28/2021
+      Last Modified: 02/22/2021
+
+      Filename: steps_spots.html
+
+   -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--Responsive Meta viewport setting (already present)-->
+    <title>Twilight Runners-About Us</title>
+    <link rel="icon" href="images/twilight_favicon2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="runners2.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+            <header>
+                <figure>
+                    <img src="images/sm_logo.jpg"alt="Twilight Runners Logo" title="Twilight Runners Logo" class="img-fluid" id="logo1">
+                        <figcaption>Twilight Runners Logo</figcaption>
+                </figure>
+                <h1>Twilight Runners Recreational Running Club</h1>
+            </header>
+            </div>
+        </div>
+    </div>
+
+ <!--Mobile Nav-->
+ <div class="mobile">
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="steps_spots.html">Where we meet</a>
+            <a href="join.html">Join Us</a>
+            <a href="time.html">Countdown Timer</a>
+            <a href="https://facebook.com/BurgerKing" target=“_blank”><img src="images/f_logo_RGB-Grey_58.png" alt=" grey facebook logo"> </a>
+            <a href=“https://twitter.com/BurgerKing” target=“_blank”><img src="images/Twitter_icon.png" alt=“blue square twitter logo”></a>
+        </div>
+        <a class = "menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+        </a>
+    </nav>
+</div>
+<!--Tablet, desktop Nav-->
+<div class="container-fluid tablet-desktop">
+    <div class="row">
+        <div class="navbar sticky-top navbar-light col-lg-12" style="background-color:#dadad4" >
+            
+                <nav>
+                    <ul>
+                        <li> 
+                            <a href="https://facebook.com/BurgerKing" target=“_blank”><img src="images/f_logo_RGB-Grey_58.png" alt=" grey facebook logo"> </a>
+                            <a href=“https://twitter.com/BurgerKing” target=“_blank”><img src="images/Twitter_icon.png" alt=“blue square twitter logo”></a>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="steps_spots.html">Where we meet</a></li>
+                        <li><a href="join.html">Join Us</a></li>
+                        <li><a href="time.html">Countdown Timer</a></li>
+                    </ul>
+                </nav>
+            
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+            <aside>
+                <ul id="loc_list">
+                    <li><a href="https://www.dcnr.pa.gov/StateParks/FindAPark/MoraineStatePark/Pages/Hiking.aspx" target="blank_">Moraine State Park</a></li>
+                    <li><a href="https://pittsburghparks.org/explore-your-parks/regional-parks/schenley-park/" target="blank_">Schenley Park</a></li>
+                    <li><a href="https://www.dcnr.pa.gov/StateParks/FindAPark/RaccoonCreekStatePark/Pages/default.aspx" target="blank_">Raccoon Creek State Park</a></li>
+                    <li><a href="http://www.beavercountypa.gov/Depts/RecTour/Pages/BrushCreekPark.aspx" target="blank_">Brush Creek Park</a></li>
+                </ul>
+                <p>Some other locations people regularly run together include local college tracks (when not in use by the school), back roads and scenic routes, and some even do a coffee-shop hop in downtown Pittsburgh.</p>
+            </aside>
+            </div>
+            <div class="col-lg-9">
+            <main>
+                <article>
+                    <h2 id="article_heading">A few places we meet</h2>
+                    <p>We aren't a traditional walking and running club that has regular in-person meets. Many of us move about independently, doing what we can when we can. However There are some sub-sets of us that enjoy doing specific things together, and they are self-organized.</p>
+                    <hr />
+                    <p>Remember, you don't have to go fast, you just have to go!</p>
+            
+                    <figure id="places_img">
+                        <img src="images/moraine_state_park-min.jpg" alt="Moraine State Park entrance image" title="Moraine State Park entrance image" />
+                        <figcaption>One of Moraine's entrances.
+                            </br><small>Image credit: POLLY SHAW / ARCADIA PUBLISHING via www.wesa.fm</small>
+                        </figcaption>
+                    </figure>
+                <article>           
+            </main>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+        <footer>
+            <p>Twilight Runners &copy; Pittsburgh, PA 12345</p>
+        </footer>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>
